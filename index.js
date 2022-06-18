@@ -28,9 +28,21 @@ class SortedList {
     }
   }
 
-  min() { }
+  min() {
+    if (this.length === 0) {
+      throw new Error('EmptySortedList');
+    } else {
+      return this.items[0];
+    }
+  }
 
-  sum() { }
+  sum() {
+    let sum = 0;
+    for (let i = 0; i < this.items.length; i++) {
+      sum += this.items[i]
+    }
+    return sum
+  }
 
   avg() { }
 }
