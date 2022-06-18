@@ -25,7 +25,12 @@ class SortedList {
     throw new Error("OutOfBounds");
   }
 
-  max() {}
+  max() {
+    if (this.items.length === 0){
+      throw new Error('EmptySortedList');
+    }
+    return this.items[this.length - 1]
+  }
 
   min() {}
 
