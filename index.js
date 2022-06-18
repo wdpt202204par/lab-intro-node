@@ -26,13 +26,18 @@ class SortedList {
   }
 
   max() {
-    if (this.items.length === 0){
-      throw new Error('EmptySortedList');
+    if (this.items.length === 0) {
+      throw new Error("EmptySortedList");
     }
-    return this.items[this.length - 1]
+    return this.items[this.length - 1];
   }
 
-  min() {}
+  min() {
+    if (this.items.length === 0) {
+      throw new Error("EmptySortedList");
+    }
+    return this.items[0];
+  }
 
   sum() {}
 
