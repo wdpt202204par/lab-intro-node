@@ -1,17 +1,24 @@
 class SortedList {
-  constructor() {}
+  constructor() {
+    this.items = [];
+    this.length = this.items.length;
 
-  add(item) {}
+  }
 
-  get(pos) {}
+  add(item) {
+    this.items.push(item)
+    this.items.sort();
+  }
 
-  max() {}
+  get(pos) { }
 
-  min() {}
+  max() { }
 
-  sum() {}
+  min() { }
 
-  avg() {}
+  sum() { }
+
+  avg() { }
 }
 
 module.exports = SortedList;
